@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">📸 NextEra Gallery</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Categories</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+  <h1 class="title">NextEra Coders Gallery</h1>
+
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('architecture')">Architecture</button>
+    <button onclick="filterImages('people')">People</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image nature"><img src="nature1.jpeg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture1.jpeg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="sandip.jpg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature2.jpg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture2.jpg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="people2.jpeg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature1.jpeg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture1.jpeg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="sandip.jpg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature2.jpg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture2.jpg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="people2.jpeg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature1.jpeg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture1.jpeg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="sandip.jpg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature2.jpg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture2.jpg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="people2.jpeg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature1.jpeg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture1.jpeg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="sandip.jpg" alt="People" onclick="openLightbox(this)"/></div>
+    <div class="image nature"><img src="nature2.jpg" alt="Nature" onclick="openLightbox(this)"/></div>
+    <div class="image architecture"><img src="architecture2.jpg" alt="Architecture" onclick="openLightbox(this)"/></div>
+    <div class="image people"><img src="people2.jpeg" alt="People" onclick="openLightbox(this)"/></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+    <div class="nav">
+      <button onclick="prevImage()">❮</button>
+      <button onclick="nextImage()">❯</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
